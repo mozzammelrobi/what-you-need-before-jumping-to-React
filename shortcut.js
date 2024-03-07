@@ -48,9 +48,15 @@ const inputNum = +input
 
 
 // 
-const isActive = true;
+let isActive = true;
 const showUser = () => console.log('show user')
 const hideUser = () => console.log('hide user')
 
 isActive? showUser() : hideUser()
+// use && if the left side is true then right side will  be executed
 isActive && showUser()
+//  user || if the left the is false then right side will be executed
+isActive ||  showUser()
+
+// toggle boolian
+isActive = !isActive
